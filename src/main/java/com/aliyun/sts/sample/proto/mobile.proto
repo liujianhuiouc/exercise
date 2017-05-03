@@ -1,0 +1,21 @@
+option java_package = "com.aliyun.sts.sample.proto";
+option java_outer_classname = "Mobile";
+option java_generate_equals_and_hash = true;
+
+package com.liujianhui;
+
+message MobilePhone{
+
+    required string               brand = 1 ;
+    required Hardware          hardware = 2;
+    repeated string              software = 3;
+
+}
+
+message Hardware {
+
+    required int32                    rom = 1;
+    required int32                    ram = 2;
+    required int32                    size = 3 ;
+
+}
